@@ -1,0 +1,13 @@
+name: Build spine-godot (Godot 4.5)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-godot-4-5:
+    uses: ./.github/workflows/spine-godot-v4.yml
+    with:
+      godot_tag: 4.5-stable
+      godot_version: 4.5.stable
+      godot_mono: false
+    secrets: inherit
